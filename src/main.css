@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* roxo da he4rt #9163cc */
+
+.clear{
+    clear: both;
+}
+
+body{
+    background-image: url(images/pc.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 1000px;
+    background-attachment: fixed;
+}
+
+.container{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background: rgb(32,32,32);
+}
+
+.logo img{
+    float: left;
+    width: 300px;
+    height: 100%;
+}
+
+.formulario{
+    margin: 80px auto;
+    background-color: white;
+    width: 70%;
+    border: 3px solid #9163cc;
+}
+
+.formulario h2{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 36px;
+    font-style: italic;
+    color: rgb(32,32,32); 
+}
+
+.formulario p{
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+    color: rgb(32,32,32); 
+}
+
+form{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.w100{
+    margin: 0 auto;
+    width: 50%;
+    padding: 20px 0;
+}
+
+input[type="text"]{
+    text-align: center;
+    width: 100%;
+    line-height: 50px;
+    font-size: 28px;
+    color: rgb(32,32,32);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid #9163cc;
+}
+
+input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: rgb(32,32,32);
+    font-size: 20px;
+}
+
+.button{
+    text-align: center;
+    padding: 20px 0;
+}
+
+input[type="button"]{
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    background-color: #9163cc;
+    border: 1px solid #754cac;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover{
+    background-color: #754cac;
+    font-size: 20px;
+}
+
+.result{
+    width: 100%;
+    padding-bottom: 60px;
+    border-top: 3px solid #9163cc;
+    background: white;
+    text-align: center;
+}
+
+.result h2{
+    padding: 35px 0;
+    font-size: 26px;
+    font-style: italic;
+    color: rgb(32,32,32); 
+}
+
+.valor{
+    width: 320px;
+    height: 80px;
+    border-bottom: 3px solid #9163cc;
+    margin: 0 auto;
+}
+
+.valor p{
+    font-size: 64px;
+}
+
+footer{
+    width: 100%;
+    background-color: #5f3c8d;
+}
+
+footer p{
+    float: right;
+    padding: 50px 0;
+    font-size: 18px;
+    font-style: italic;
+    color: white;
+}
+
+@media screen and (max-width: 1440px){
+    .logo{
+        float: none;
+        margin-left: calc(50% - 150px);
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .w100{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .w100{
+        width: 100%;
+    }
+
+    ::placeholder{
+        font-size: 17px;
+    }
+}

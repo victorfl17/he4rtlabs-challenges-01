@@ -5,11 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora de Freela - He4rtDevs</title>
     <link rel="stylesheet" href="./main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div>
-      <h1>Olá mundo.</h1>
-    </div>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="images/logo-he4rt2.png"/>
+        </div><!--logo-->
+      </div><!--container-->
+      <div class="clear"></div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="formulario">
+          <h2>Calculadora de freelas</h2>
+          <p>Uma calculadora que irá te mostrar o valor da sua hora perante o freelance cotado.</p>
+          <form>
+            <div class="w100">
+              <input placeholder="Tempo diário investido no projeto" type="text" pattern="[1-24]" required>
+            </div>
+
+            <div class="w100">
+              <input placeholder= "Dias efetivos trabalhando" type="text" pattern="[1-365]" required>
+            </div>
+
+            <div class="w100">
+              <input placeholder="Dias de Férias por projeto" type="text" pattern="[0-365]" required>
+            </div>
+
+            <div class="w100">
+              <input placeholder="Valor total do Projeto" type="text" pattern="[0-1000000]" required>
+            </div>
+
+            <div class="button">
+              <input type="button" value="Ver resultado">
+            </div>
+          </form>
+        </div><!--formulario-->
+      </div><!--container-->
+    </section>
+
+    <section>
+      <div class="result">
+        <div class="container">
+          <h2>O valor da sua hora é igual a:</h2>
+          <div class="valor">
+            <p>R$ 0,00</p>
+          </div><!--valor-->
+        </div><!--container-->
+      </div><!--result-->
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="credits">
+          <p>Este desafio foi desenvolvido pelo grupo He4rt Developers para uso livre da comunidade.</p>
+        </div><!--credits-->
+      </div><!--container-->
+
+      <div class="clear"
+    </footer>
     <script src="./main.js"></script>
   </body>
 </html>
